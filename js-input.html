@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input JS</title>
+    <script type="text/javascript">
+        function displayOutput () {
+            var input = document.getElementById("userInput").value;
+            if (input.length === 0) {
+               alert("hey! say something!")
+           }
+            document.getElementById("result").innerHTML = "Hello " + input.toUpperCase() + "!"
+        }
+    </script>
+</head>
+<body>
+    <p>What's your name?</p>
+    <input type="text" id="userInput"/>
+    <input type="submit" value="Submit" onclick="displayOutput()" />
+    
+    <p id="result"></p>
+
+</body>
+</html>
